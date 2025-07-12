@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Employee Directory</title>
+  <link rel="stylesheet" href="styles/dashboard.css" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>Employee Directory</h1>
+    <div class="top-controls">
+      <input type="text" id="searchBar" placeholder="Search by name or email"/>
+      <button class="btn filter-btn">Filter</button>
+    </div>
+  </header>
+
+  <div class="controls-row">
+    <div class="left">
+      <label>Sort: 
+        <select id="sortOptions">
+          <option value="">--Select--</option>
+          <option value="firstName">First Name</option>
+          <option value="department">Department</option>
+        </select>
+      </label>
+      <label>Show: 
+        <select id="itemsPerPage">
+          <option>10</option>
+          <option>25</option>
+          <option>50</option>
+        </select>
+      </label>
+    </div>
+    <button class="btn add-btn" id="addEmployeeBtn">Add Employee</button>
+  </div>
+
+  <main id="employeeList" class="employee-grid"></main>
+
+  <footer class="footer">
+    © 2025 Employee Directory App. All rights reserved.
+  </footer>
+
+  <script src="scripts/dashboard.js"></script>
+</body>
+</html>
